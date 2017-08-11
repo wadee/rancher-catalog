@@ -3,7 +3,6 @@
   version: "0.0.1"
   description: |
     fluentd
-  scale: 1
   questions:
     - variable: elasticsearch
       label: "elasticsearch master"
@@ -17,3 +16,6 @@
       required: true
       description: |
         kafka broker
+  services:
+    fluent-es:
+      scala: 1
