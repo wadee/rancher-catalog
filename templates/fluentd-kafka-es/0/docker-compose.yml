@@ -1,0 +1,13 @@
+version: '2'
+services:
+  fluent-es:
+    image: gitlab-registry.lianjia.com/docker/fluent-kafka-es
+    stdin_open: true
+    tty: true
+    ports:
+    - 24224:24224/tcp
+    external_links:
+      - "${elasticsearch}:elasticsearch"
+      - "${kafkabroker}:kafkabroker"
+    labels:
+      io.rancher.scheduler.global: 'true'
