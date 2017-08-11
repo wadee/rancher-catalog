@@ -9,5 +9,3 @@ services:
     external_links:
       - "${elasticsearch}:elasticsearch"
       - "${kafkabroker}:kafkabroker"
-    labels:
-      io.rancher.scheduler.global: 'true'
