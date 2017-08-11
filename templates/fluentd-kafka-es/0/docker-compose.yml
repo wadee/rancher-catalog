@@ -1,7 +1,7 @@
 version: '2'
 services:
   fluent-es:
-    image: gitlab-registry.lianjia.com/docker/fluent-kafka-es
+    image: liangzh/fluent-kafka-es
     stdin_open: true
     tty: true
     ports:
