@@ -9,3 +9,7 @@ services:
     external_links:
       - "${elasticsearch}:elasticsearch"
       - "${kafkabroker}:kafkabroker"
+    environment:
+      KAFKA_PORT: '${kafka_port}'
+      KAFKA_GROUP: '${kafka_group}'
+      KAFKA_TOPICS: '${kafka_topics}'
