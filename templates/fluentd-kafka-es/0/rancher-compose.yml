@@ -13,21 +13,21 @@
       type: "service"
       required: true
       description: "kafka broker"
-    - variable: kafka_port
-      label: "kafka port"
-      type: "string"
-      required: true
-      description: "kafka port"
-    - variable: kafka_group
-      label: "kafka group"
-      type: "string"
-      required: true
-      description: kafka group
-    - variable: kafka_topics
-      label: "kafka topics"
-      type: "string"
-      required: true
-      description: "kafka topics"
+#    - variable: kafka_port
+#      label: "kafka port"
+#      type: "string"
+#      required: true
+#      description: "kafka port"
+#    - variable: kafka_group
+#      label: "kafka group"
+#      type: "string"
+#      required: true
+#      description: kafka group
+#    - variable: kafka_topics
+#      label: "kafka topics"
+#      type: "string"
+#      required: true
+#      description: "kafka topics"
   services:
     fluent-es:
       scala: 1
