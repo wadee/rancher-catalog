@@ -1,23 +1,23 @@
 .catalog:
   name: fluentd
-  version: "0.0.1"
+  version: "0.0.2"
   description: fluentd-kafka-es
   questions:
     - variable: elasticsearch
       label: "elasticsearch master"
       type: "service"
       required: true
-      description: elasticsearch master
+      description: "elasticsearch master"
     - variable: kafkabroker
       label: "kafka broker"
       type: "service"
       required: true
-      description: kafka broker
+      description: "kafka broker"
     - variable: kafka_port
       label: "kafka port"
       type: "string"
       required: true
-      description: kafka port
+      description: "kafka port"
     - variable: kafka_group
       label: "kafka group"
       type: "string"
@@ -27,7 +27,7 @@
       label: "kafka topics"
       type: "string"
       required: true
-      description: kafka topics
+      description: "kafka topics"
   services:
     fluent-es:
       scala: 1
