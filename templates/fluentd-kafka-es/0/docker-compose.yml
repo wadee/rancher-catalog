@@ -10,6 +10,6 @@ services:
       - "${elasticsearch}:elasticsearch"
       - "${kafkabroker}:kafkabroker"
     environment:
-      KAFKA_PORT: '${kafka_port}'
-      KAFKA_GROUP: '${kafka_group}'
-      KAFKA_TOPICS: '${kafka_topics}'
+      KAFKA_PORT: "${kafka_port}"
+      KAFKA_GROUP: "${kafka_group}"
+      KAFKA_TOPICS: "${kafka_topics}"
