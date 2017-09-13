@@ -1,0 +1,21 @@
+.catalog:
+  name: fluentd
+  version: "prod_kafka"
+  description: |
+    fluentd
+  questions:
+    - variable: elasticsearch
+      label: "elasticsearch master"
+      type: "service"
+      required: true
+      description: |
+        elasticsearch master
+    - variable: kafkabroker
+      label: "kafka broker"
+      type: "service"
+      required: true
+      description: |
+        kafka broker
+  services:
+    fluent-es:
+      scala: 1
