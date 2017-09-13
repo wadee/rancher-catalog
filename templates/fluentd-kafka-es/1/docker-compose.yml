@@ -1,7 +1,7 @@
 version: '2'
 services:
   fluent-es:
-    image: liangzh/fluent-kafka-es:kafka_prod
+    image: liangzh/fluent-kafka-es:prod_kafka_v1.0
     stdin_open: true
     tty: true
     ports:
