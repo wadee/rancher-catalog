@@ -1,11 +1,10 @@
 version: '2'
 services:
   fluent-es:
-    image: liangzh/fluent-kafka-es:prod_kafka_v1.0
+    image: liangzh/fluent-kafka-es:feature_prod_kafka
     stdin_open: true
     tty: true
     ports:
     - 24224:24224/tcp
     external_links:
       - "${elasticsearch}:elasticsearch"
-      - "${kafkabroker}:kafkabroker"
