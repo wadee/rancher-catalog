@@ -1,4 +1,4 @@
-version: '1'
+version: '2'
 services:
   fluent-es:
     image: liangzh/fluent-kafka-es:feature_offline_kafka
