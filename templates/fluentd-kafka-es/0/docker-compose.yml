@@ -1,7 +1,7 @@
-version: '2'
+version: '1'
 services:
   fluent-es:
-    image: liangzh/fluent-kafka-es
+    image: liangzh/fluent-kafka-es:feature_offline_kafka
     stdin_open: true
     tty: true
     ports:
