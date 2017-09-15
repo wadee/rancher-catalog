@@ -7,6 +7,5 @@ services:
     ports:
     - 24224:24224/tcp
     external_links:
-      - "${elasticsearch}:elasticsearch"
       - "${kafkabroker}:kafkabroker"
       - "${influxdb}:influxdb"
