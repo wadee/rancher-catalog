@@ -1,6 +1,6 @@
 .catalog:
   name: fluentd
-  version: "add influxdb"
+  version: "influxdb"
   description: |
     fluentd
   questions:
